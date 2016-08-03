@@ -1,0 +1,253 @@
+    	<div class="location">当前位置：<a href="#">二手车管理</a> > <a href="#">二手车信息发布</a></div>
+    	<div class="content">
+    		<div class="addCar">
+	    		<ul>
+	    			<li>
+	    				<span class="sp"><label class="font-red">* </label>品牌：</span>
+		          		<select name="" id="carEdit_select" style="width:150px"></select>
+		          		<span class="sp">车系：</span>
+		          		<select name="" id="cartypeEdit_select" style="width:150px">
+		          			<option value="">--请选择--</option>
+		          		</select>
+	    			</li>
+	    			<li class="carColor">
+	    				<span class="sp vat" style="padding-top:8px;"><label class="font-red">* </label>车身颜色：</span>
+	    					<ul id="color_ul">
+									<li class="bg" value="黑色">
+										<div class="cColor" style="background:#000;"></div>
+										<span>黑色</span>
+									</li>
+									<li value="银灰色">
+										<div class="cColor" style="background:#D6D6D6;"></div>
+										<span>银灰色</span>
+									</li>
+									<li value="白色">
+										<div class="cColor" style="background:#fff;"></div>
+										<span>白色</span>
+									</li>
+									<li value="红色">
+										<div class="cColor" style="background:red;"></div>
+										<span>红色</span>
+									</li>
+									<li value="蓝色">
+										<div class="cColor" style="background:blue;"></div>
+										<span>蓝色</span>
+									</li>
+									<li value="深灰色">
+										<div class="cColor" style="background:#8F8F8F;"></div>
+										<span>深灰色</span>
+									</li>
+									<li value="香槟色">
+										<div class="cColor" style="background:#C98C50;"></div>
+										<span>香槟色</span>
+									</li>
+									<li value="绿色">
+										<div class="cColor" style="background:green;"></div>
+										<span>绿色</span>
+									</li>
+									<li value="黄色">
+										<div class="cColor" style="background:yellow;"></div>
+										<span>黄色</span>
+									</li>
+									<li value="橙色">
+										<div class="cColor" style="background:#F38010;"></div>
+										<span>橙色</span>
+									</li>
+									<li value="紫色">
+										<div class="cColor" style="background:#7139A1;"></div>
+										<span>紫色</span>
+									</li>
+									<li value="咖啡色">
+										<div class="cColor" style="background:#552701;"></div>
+										<span>咖啡色</span>
+									</li>
+									<li value="多彩色">
+										<div class="cColor" style="background:url(/fpcwx/images/duocai.jpg);"></div>
+										<span>多彩色</span>
+									</li>
+									<li value="其他">
+										<div class="cColor" style="background:url(/fpcwx/images/qita.jpg);"></div>
+										<span>其他</span>
+									</li>
+								</ul>				
+	    			</li>
+	    			<li>
+	    			<span class="sp"><label class="font-red">* </label>车辆级别：</span>
+          			<select name="" id="select_lev">
+          			  <option value="">--请选择--</option>
+          				  <option value="轿车"  >轿车</option>
+				          <option value="越野车/SUV">越野车/SUV</option>
+				          <option value="商务车/MPV">商务车/MPV</option>
+				          <option value="跑车">跑车</option>
+				          <option value="皮卡">皮卡</option>
+				          <option value="微面">微面</option>
+          			</select>
+	    			</li>
+	    			<li>
+	    				<span class="sp"><label class="font-red">* </label>发动机：</span>
+	    				 <select name="" id="fdj_select">
+	    			       <option value="">--请选择--</option>
+	    				   <option value="1.0T以下">1.0T以下</option>
+	    			       <option value="1.0T">1.0T</option>
+	    			       <option value="1.1T">1.1T</option>
+	    			       <option value="1.3T">1.3T</option>
+	    			       <option value="1.4T">1.4T</option>
+	    			       <option value="1.5T">1.5T</option>
+	    			       <option value="1.6T">1.6T</option>
+	    			       <option value="1.8T">1.8T</option>
+	    			       <option value="2.0T">2.0T</option>
+	    			       <option value="2.0T以上">2.0T以上</option>
+	    			       <option value="其他">其他</option>
+ 
+	    				</select>
+	    			</li>
+	    			<li>
+	    				<span class="sp"><label class="font-red">* </label>变速箱：</span>
+	    				 <select name="" id="bsx_select">
+	    				   <option value="">--请选择--</option>
+	    				   <option value="单离合">单离合</option>
+	    			       <option value="双离合">双离合</option>
+	    				</select>
+
+	    			</li>
+	    			<li>
+	    				<span class="sp"><label class="font-red">* </label>车牌所在地：</span>
+	    				<select name="" id="provinceEdit_select"></select>
+	    				
+	    				<select name="" id="cityEdit_select">
+	    					<option value="">--请选择--</option>
+	    				</select>
+	    			</li>
+	    			<li>
+	    				<span class="sp"><label class="font-red">* </label>经销商：</span>
+	    				<input id="merchantName_input" maxlength="50"  type="text" class="input-txt w200"/> 
+	    			</li>
+	    			<li>
+	    				<span class="sp"><label class="font-red">* </label>行驶里程：</span>
+	    				<input id="mileage_input" type="text" maxlength="7"  class="input-txt w200" /> 公里
+	    			</li>
+	    			<li>
+	    				<span class="sp"><label class="font-red">* </label>首次上牌时间：</span>
+	    				 <input type="text" class="input-txt w200" id="buyDate_input" 
+								onclick="WdatePicker();"/>
+	    			</li>
+	    			<li>
+	    				<span class="sp"><label class="font-red">* </label>预售价格：</span>
+	    				<input id="price_input" type="text" maxlength="6"  class="input-txt w200"/> 万元
+	    			</li>
+	    			<li>
+	    				<span class="sp">新车价格：</span>
+	    				<input id="newPrice_input" type="text" maxlength="6" class="input-txt w200"/>万元
+	    			</li>
+	    			<li>
+	    				<span class="sp">相关认证：</span>
+	    				<textarea cols="50" rows="3" maxlength="250"  id="approve_input"></textarea>
+	    			</li>
+	    			<li style="padding-top:5px;">
+	    				<span class="sp">相关质保：</span>
+	    				<textarea cols="50" rows="3" maxlength="250" id="assure_input"></textarea>
+	    			</li>
+	    			<li>
+	    				<span class="sp"><label class="font-red">* </label>车辆性质：</span>
+	    				<select name="" id="select_clxz">
+	    				   <option value="1">营运</option>
+	    			       <option value="2">非营运</option>
+	    			       <option value="3">营转非</option>
+	    			       <option value="4">租赁</option>
+	    				</select>
+	    			</li>
+	    			<li>
+	    				<span class="sp">车辆状况：</span>
+	    				<input id="carStatus" type="text" maxlength="50" class="input-txt w200"/>
+	    			</li>
+	    			<li>
+	    				<span class="sp"><label class="font-red">* </label>是否有保养记录：</span>
+	    				<input name="isbyjl" value="1" type="radio" checked="checked"> 是
+	    				<input name="isbyjl" type="radio" value="0" class="ml30"> 否
+	    			</li>
+	    			<li>
+	    				<span class="sp">保养到期：</span>
+	    				<input id="repairDate" type="text" class="input-txt w200"/>
+	    			</li>
+	    			<li>
+	    				<span class="sp">年检到期：</span>
+	    				<input id="annDate" type="text" class="input-txt w200"/>
+	    			</li>
+	    			<li>
+	    				<span class="sp">流通次数：</span>
+	    				<input id="num_input" type="text" maxlength="7"  class="input-txt w200"/>
+	    			</li>
+	    			<li>
+	    				<span class="sp vat">融资套餐：</span>
+	    				<table class="tab" style="width: 590px;">
+	    					<thead id="rz_thead">
+	    						<tr>
+	    							<td>套餐名称</td>
+	    							<td>首付比例（%）</td>
+	    							<td>融资金额（元）</td>
+	    							<td>融资期限（月）</td>
+	    							<td>月供（元）</td>
+	    							<td ><a href="javascript:;" ><img id="add_a" src="/fpcwx/images/u161.png" alt=""></a></td>
+	    						</tr>
+	    					</thead>
+	    					<tbody id="rz_tbody">
+	    						<tr>
+	    							<td><input class="describe" maxlength="20" type="text" style="width:100px" /></td>
+	    							<td><input class="describe" maxlength="10" type="text" style="width:100px" /></td>
+	    							<td><input class="describe" maxlength="10" type="text" style="width:100px" /></td>
+	    							<td><input class="describe" maxlength="10" type="text" style="width:100px" /></td>
+	    							<td><input class="describe" maxlength="10" type="text" style="width:100px" /></td>
+	    							<td></td>
+	    						</tr>
+	    					</tbody>
+	    				</table>
+	    			</li>
+	    			<li>
+	    				<span class="sp"><label class="font-red">* </label>车辆实拍：</span>
+	    				<p class="des">上传实拍照片可提高一倍售出成功率，最多上传 <label class="font-red">4</label> 张 </p>
+		    			   <form  action="" method="post" enctype="multipart/form-data" id="upload_photo_form" style="display: inline;">
+			                     <div class="up_wrap" style="*top:88px;padding-left:5px;">
+						           <a href="javascript:void(0)" class="btnCancel" id="chooseImg" style="top:0px;">
+						           		<span class="btn-upload">选择图片 </span>
+						           </a>
+						           <span class="soundFileed" style="top:0px;"><input type="file"  id="file_carPhoto" class="hideFilet" name="f"/></span>
+					           </div>
+			                </form>
+			             
+	    				<div class="pic" id="pic_div">
+	    					
+	    					<img id="img_1" src="/fpcwx/images/sh-1.jpg" onerror="this.src='/fpcwx/images/sh-1.jpg'">
+	    					<img id="img_2" src="/fpcwx/images/sh-1.jpg" onerror="this.src='/fpcwx/images/sh-1.jpg'">
+	    					<img id="img_3" src="/fpcwx/images/sh-1.jpg" onerror="this.src='/fpcwx/images/sh-1.jpg'">
+	    					<img id="img_4" src="/fpcwx/images/sh-1.jpg" onerror="this.src='/fpcwx/images/sh-1.jpg'">
+	    				</div>
+		
+		                <input type="text" style="display: none;" id="car_photo_url"></input>
+	    			</li>
+	    			<li>
+	    				<span class="sp vat">车主自述：</span>
+	    				<textarea cols="70" rows="5" id="areaczzs"></textarea>
+	    				<div style="padding-left:150px"><span id="count">0</span>/500 字<span class="chao font-red ml30" style="display:none">字数已超过500！</span></div>
+	    			</li>
+	    			<li>
+	    				<p class="btn ml120" id="add_p"><a href="javascript:;" id="fabu_a" class="btn-submit">发布</a></p>
+	    				<p class="btn ml120" id="update_p" style="display: none;"><a href="javascript:;" id="update_a" class="btn-submit">更新</a></p>
+	    				<p><a href="javascript:;"  id="back_a" class="btn-cancel">返回</a></p>
+	    			</li>
+	    		</ul>
+    		</div>
+    	</div>
+<input id="img_1_input" style="display: none;"></input>
+<input id="img_2_input" style="display: none;"></input>
+<input id="img_3_input" style="display: none;"></input>
+<input id="img_4_input" style="display: none;"></input>  
+<input id="updateid" style="display: none;"></input>   	
+<script src="/fpcwx/js/mp/contentManage/sitesManage/oldCarEdit.js" type="text/javascript"></script>
+<script src="/fpcwx/js/mp/publicUtility.js" type="text/javascript"></script>    
+<script src="/fpcwx/js/com/swfobject.js"></script>	
+<script>
+	$(function(){
+		//oldCarEdit.initPage();
+	});
+	 
+</script>

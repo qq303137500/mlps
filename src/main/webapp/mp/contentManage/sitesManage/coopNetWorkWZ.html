@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/fpcwx/js/mp/contentManage/sitesManage/test.css" type="text/css" media="screen" />
+<div class="main clearfix">
+    <div style="margin:20px;" class="place"><a href="http://localhost/fpcwx">主页</a> &gt; <a href="/fpcwx/a/hezuowangdianchaxun/">合作网点查询</a></div>
+    <div class="wd-wrap">
+      <div class="coart">
+        <div class="wd-left" id="map_wrap" style="height: 586px;width:400px; position: relative;">
+        	
+        </div>
+        <div class="wd-right">
+          <div class="search">
+            <h3>合作商网点查询</h3>
+            <select id="province_select" >
+              <option value="">--省份--</option>
+            </select>
+            <select id="city_select" >
+              <option value="">--城市--</option>
+            </select>
+            <a class="btn-default" id="sub_a">查 询</a>
+          </div>
+          <div class="result" id="result_div">
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- /pright -->
+  </div>
+  
+<script src="/fpcwx/js/mp/contentManage/sitesManage/ershouchemanage.js"></script>
+<script src="/fpcwx/js/mp/contentManage/sitesManage/coopNetWorkWZ.js"></script>
+<script>
+	$(function(){
+		coopNetWorkWZ.initPage();
+	});
+	 
+</script> 	

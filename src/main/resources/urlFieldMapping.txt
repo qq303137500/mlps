@@ -1,0 +1,13 @@
+{
+	"/api/userInfo/register": [
+        {
+            "length": 32,
+            "name": "account",
+            "isSignField": true
+        },{
+            "length": 32,
+            "name": "timestamp",
+            "isSignField": true
+        }
+    ]
+}

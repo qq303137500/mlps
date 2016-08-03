@@ -1,0 +1,108 @@
+  	<div class="location">当前位置：<a href="#">内容管理</a> > <a href="#">微信服务管理</a> > <a href="#">公众号菜单设置</a></div>
+  	<div class="content">
+	    	<div class="sh-top clearfix">
+	    		<p><a href="#" class="btn-submit" id="changeMenuStateId">应用</a></p>
+					<p><a href="#" class="btn-cancel" id="addWxMenu">新增一级菜单</a></p>
+	    	</div>
+	    	<div class="" style="border: 1px solid #dedede; min-height: 550px;">
+		    	<div class="wx_menu">
+		    		<h4>菜单管理</h4>
+		    		<ul id="wx_menu_ul_id">
+		    			<!-- <li>
+		    				<div>
+			    				<span class="Darrow"></span>
+			    				<a>我要买车</a>
+			    				<a>启用</a>
+		    				</div>
+								<dl>
+									<dd>货款申请</dd>
+									<dd>产品介绍</dd>
+									<dd>所需资料</dd>
+									<dd>融资计算器</dd>
+								</dl>
+		    			</li>
+		    			<li>
+		    				<div>
+			    				<span class="Darrow"></span>
+			    				<a>自助服务</a>
+			    				<a>启用</a>
+			    			</div>
+								<dl>
+									<dd>申请进度查询</dd>
+									<dd>还款计划查询</dd>
+									<dd>申请提前还款</dd>
+								</dl>
+							</li>
+		    			<li>
+		    				<div>
+			    				<span class="Darrow"></span>
+			    				<a>更多</a>
+			    				<a>启用</a>
+			    			</div>
+								<dl>
+									<dd>公司介绍</dd>
+									<dd>行业资讯</dd>
+									<dd>二手车交易</dd>
+									<dd>联系我们</dd>
+								</dl>
+							</li>
+							 -->
+		    		</ul>
+		    	</div>
+		    	<div style="display: inline-block;vertical-align: top;" id="wx_menu_manege_right">
+		    		<div class="wx_tip">
+		    			<h3>提示</h3>
+		    			<p>1、请从左边选择菜单进行操作</p>
+		    			<p>2、如果一级菜单是父类型的必须要有子菜单才是有效菜单</p>
+		    			<p>3、公众号最多只能同时启用3个一级菜单，每个一级菜单最多只能同时启用5个二级菜单</p>
+		    		</div>
+			    	<div class="wx_addMenu" style="display:none">
+			    		<table>
+			    				<tr>
+			    					<th>菜单名称：</th>
+			    					<td>
+			    						
+			    						<input id="menuName" type="text" class="input-txt w200" />
+			    					</td>
+			    				</tr>
+			    				<tr>
+			    					<th>菜单排序序号：</th>
+			    					<td>		    						
+											<select name="menuIndex" id="menuIndexId">
+											<option value="1" selected>1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											</select>
+			    					</td>
+			    				</tr>
+			    				
+			    				<tr>
+			    					<th>菜单状态：</th>
+			    					<td>
+			    						
+			    						<select name="menuState" id="menuStateId">
+			    						<option value="1" selected>启用</option>
+										<option value="0">停用</option>
+			    						</select>
+			    					</td>
+			    				</tr>
+			    				
+			    				<tr>
+			    					<td style="height: 45px; text-align: center;" colspan="2">
+			    						<!-- <p><a href="#" class="btn-upload" id="addSaveMenu">保存</a></p> -->
+										<p><a href="#" class="btn-upload" id="backMenu">返回</a></p>			    						
+			    						<p><a href="#" class="btn-upload" id="addSubMenuNext">添加下一级菜单</a></p>	
+										</td>
+			    				</tr>
+			    			</table>	
+			    	</div>
+		    	</div>	
+	    	</div>
+    	</div>
+<script src="../js/mp/wxMenuManage/manage.js" type="text/javascript"></script>
+<script src="../js/mp/wxMenuManage/menuList.js" type="text/javascript"></script>
+<script>
+$(function(){
+	menuList.initPage();
+});
+</script>

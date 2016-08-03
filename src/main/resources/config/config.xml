@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Config> 
+  <!-- System配置 -->  
+  <Content Name="System" Description=""> 
+    <ConfigItem Id="0" Name="fileMonitorTaskInterval" Value="10000" Description="配置文件监听间隔时间（毫秒）"/>  
+    <ConfigItem Id="1" Name="tomcat.home" Value="D:/Program Files/apache-tomcat-7.0.55/apache-tomcat-7.0.55" Description="本地开发环境tomcat路径"/>  
+    <ConfigItem Id="2" Name="diamondServer.flag" Value="false" Description="是否加载配置中心DiamondServer"/>  
+  </Content>  
+  
+   <!-- Security配置 -->  
+  <Content Name="Security" Description=""> 
+    <ConfigItem Id="0" Name="itemKey" Value="596a96cc7bf9108cd896f33c44aedc8a21811d6703a43059cdc3dcad1bf717c4" Description="系统自身密钥"/>  
+    <ConfigItem Id="1" Name="signRightSwitch" Value="1" Description="签名验证开关（0：关闭, 1：打开）"/>  
+    <ConfigItem Id="2" Name="timestampRightSwitch" Value="1" Description="时间催验证开关（0：关闭, 1：打开）"/>
+    <ConfigItem Id="3" Name="ipRightSwitch" Value="0" Description="IP鉴权开关（0：关闭, 1：打开）"/>
+    <ConfigItem Id="4" Name="IpList" Value="*.*.*.*,192.168.*.*" Description="允许访问的Ip列表, 列表参数中为IP或者IP规则表达式(如10.1.*.*)，默认是所有地址都可访问"/>
+    <ConfigItem Id="5" Name="timestampValid" Value="30" Description="时间戳的有效时长多少秒"/>
+  </Content>  
+  
+  <!-- 文件服务器地址配置 -->
+  <Content Name="fileServiceUrl" Description="文件服务器域名">
+  	<ConfigItem Id="0" Name="fileService.host" Value="http://fileservice.365car.com.cn:88" Description="文件服务器域名"></ConfigItem>
+  </Content>
+  
+</Config>

@@ -1,0 +1,38 @@
+  	<div class="location">当前位置：<a href="javascript:;">首页管理</a> > <a href="javascript:;">查看详情</a></div>
+  	<div class="content">
+  		<div class="addCar">
+   		<ul>
+   		     <li>
+   				<span class="sp">标题：</span>
+        		<input id="cpName" type="text" class="input-txt w300"/>
+        		<p style="font-size:13px;color:darkgray">（不超过100字符）</p>
+   			</li>
+			<li style="padding-top:20px;">
+   				<span class="sp vat">图片：</span>
+        		 <form id="upload_photo_form"  enctype="multipart/form-data" method="post" style="display:inline;" >
+						<!-- width:3425;height:2362; -->
+						<img style="width:150px;height:105px;border:1px solid #b2b2b2;vertical-align:bottom;margin-right:5px;" 
+			           	src="/fpcwx/images/default_img.png" style="margin-top:5px;"  
+			           	onerror="this.src='/fpcwx/images/wall_active_upload.png'" id="imgInfo" />
+			           <input type="hidden" id="suoPic_value" >
+               </form>
+        		
+   			</li>
+   			<li>
+   				<span class="sp">图片跳转链接：</span>
+        		<input id="httpUrl" type="text" class="input-txt w300"/>
+        		<p style="font-size:13px;color:darkgray">（不超过100字符）</p>
+   			</li>
+   			<li>
+   				<p class="btn ml120"><a href="javascript:void(0)" class="btn-cancel" id="cancelBT">返回</a></p>
+   			</li>
+   		</ul>
+  		</div>
+  	</div>
+<script src="../js/mp/contentManage/appManage/manage.js" type="text/javascript"></script>
+<script src="../js/mp/indexManage/findIndexPhoto.js" type="text/javascript"></script>
+<script>
+$(function(){
+	findIndexPhoto.initPage();
+});
+</script>

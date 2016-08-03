@@ -1,0 +1,55 @@
+<div class="location">当前位置：<a href="#">内容管理</a> > <a href="#">在线申请</a></div>
+    	<div class="content">
+    	<div class="sh-top">
+    		<div class="clearfix">
+    			<span>联系人名称：</span><input type="text" id="inTitle" class="input-txt w200" placeholder="请输入名称关键字">
+    			&nbsp;&nbsp;&nbsp;
+    			<span>类型：</span>
+    			<select style="width:100px" id="selType">
+	    			<option value="1" selected="selected">个人</option>
+	    			<option value="2">企业</option>
+    			</select>
+					<p><a href="#" class="btn-cancel" id="queryBT">搜索</a></p>
+    		</div>
+    		<div>
+    			<table>
+    				<thead>
+    					<tr id="personalTR">
+    						<th>姓名</th>
+    						<th>品牌</th>
+    						<th>车系</th>
+    						<th>省份</th>
+    						<th>城市</th>
+    						<th>手机号</th>
+    						<th>信箱</th>
+    						<th>QQ号</th>
+    						<th>购车类型</th>
+    					</tr>
+    					<tr id="companyTR" style="display: none">
+    						<th>企业名称</th>
+    						<th>品牌</th>
+    						<th>车系</th>
+    						<th>数量</th>
+    						<th>用途</th>
+    						<th>联系人</th>
+    						<th>手机号</th>
+    						<th>信箱</th>
+    						<th>QQ号</th>
+    						<th>企业传真号</th>
+    						<th>购车类型</th>
+    					</tr>
+    				</thead>
+    				<tbody  id="onlineAppBody">
+    				</tbody>
+    			</table>
+    			<p class="page" id="onlineAppListPage"></p>
+    		</div>
+    	</div>
+    	</div>
+<script src="../js/mp/contentManage/appManage/manage.js" type="text/javascript"></script>
+<script src="../js/mp/contentManage/appManage/onlineAppList.js" type="text/javascript"></script>
+<script>
+$(function(){
+	onlineAppList.initPage();
+});
+</script>

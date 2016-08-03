@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+    <Content Name="Server" Description="">
+        <ConfigItem Id="0" Name="socket.host" Value="218.17.152.242" Description="socket 配置" />
+        <ConfigItem Id="1" Name="socket.port" Value="8085,8086" Description="中心服务器端口，群服务器端口 +5" />
+        <ConfigItem Id="2" Name="socket.traffic.host" Value="59.37.56.250" Description="socket 配置(实时路况服务器)" />
+        <ConfigItem Id="3" Name="socket.traffic.port" Value="8173" Description="socket 配置(实时路况服务器)" />
+        <ConfigItem Id="4" Name="host.server.http" Value="http://218.17.152.242:8081" Description="c++ http服务器host" />
+        <ConfigItem Id="5" Name="busiIp" Value="218.17.152.242" Description="业务服务器 C++" />
+        <ConfigItem Id="6" Name="InsideBusiSerHost" Value="http://113.108.73.238:8091" Description="服务器POI系统host,c++服务器" />
+        <ConfigItem Id="7" Name="poi.traffic.c++.host" Value="http://172.10.10.89:90" Description="poi检索Host C++  商用环境"/>
+        <ConfigItem Id="8" Name="poi.traffic.host" Value="http://192.168.7.35:81" Description="poi检索Host csp系统" />
+        <ConfigItem Id="9" Name="image.terminal.host" Value="http://59.37.56.252:8081" Description="手持设备图片路径host" />
+        <ConfigItem Id="10" Name="oss.host" Value="http://testoss.4sonline.net:81/" Description="运营支撑系统Host" />
+        <ConfigItem Id="11" Name="agent.host" Value="http://testagent.4sonline.net:81/" Description="运营支撑系统Host" />
+        <ConfigItem Id="12" Name="ics.host" Value="http://testics.4sonline.net:81/" Description="运营支撑系统Host" />
+        <ConfigItem Id="13" Name="payCenter.host" Value="http://testpaycenter.4sonline.net:81" Description="支付中心host" />
+        <ConfigItem Id="14" Name="web4s.bbs.host" Value="http://testbbs.4sonline.net:81" Description="bbs地址" />
+        <ConfigItem Id="15" Name="marketing.host" Value="http://testbusiness.4sonline.net:81" Description="marketing服务器host" />
+        <ConfigItem Id="16" Name="web4s.host" Value="http://testwww.4sonline.net:81" Description="web4s系统host" />
+        <ConfigItem Id="17" Name="bizservice.host" Value="http://testbizservice.4sonline.net:81/" Description="bizservice项目Host" />
+        <ConfigItem Id="18" Name="gps.url" Value="http://218.17.152.243:9004" Description="http://192.168.7.24:9004电子围栏开发环境地址" />
+        <ConfigItem Id="19" Name="callser.host" Value="http://testcallser.4sonline.net:81" Description="更新用户信息通知callser系统" />
+        <ConfigItem Id="20" Name="thirdser.host" Value="http://testthirdser.4sonline.net:81" Description="thirdser系统host" />
+        <ConfigItem Id="21" Name="sphinx.host" Value="192.168.7.41" Description="全文搜索配置" />
+        <ConfigItem Id="22" Name="sphinx.port" Value="9313" Description="全文搜索配置" />
+        <ConfigItem Id="23" Name="tsi.host" Value="http://testtsi.4sonline.net:81/" Description="tsi系统Host" />
+        <ConfigItem Id="24" Name="ElasticSearch.host" Value="192.168.11.28" Description="ElasticSearch搜索引擎host" />
+        <ConfigItem Id="25" Name="search.host" Value="http://testsearch.4sonline.net:81" Description="静态全文搜索host" />
+        <ConfigItem Id="26" Name="fileService.host" Value="http://testfileservice.4sonline.net:88/fileService/" Description="fileService service address" />
+        <ConfigItem Id="27" Name="smsScanCode" Value="5555test,99test,shouhubaotest,registertest,ZTtemp" Description="需要短信扫描的code：短信查车，绑定商户，平安亲人，平安亲人注册,暂停预警" />
+        <ConfigItem Id="28" Name="isp.host" Value="http://testisp.4sonline.net:81/isp" Description="车联网业务运营支撑平台" />
+        <ConfigItem Id="29" Name="obd.host" Value="http://testobd.4sonline.net:81/" Description="OBD服务地址" />
+        <ConfigItem Id="30" Name="obd.c++.host" Value="http://218.17.152.242:9001" Description="C++对应的OBD服务器地址，请求终端上报GPS信号强度，GSM信号强度" />
+        <ConfigItem Id="31" Name="violationQuery.glsx.host" Value="http://qcars.glsx.net:7060/" Description="广联违章查询host" />
+        <ConfigItem Id="33" Name="smartbox.host" Value="http://218.17.152.242:9003/" Description="C++ smartbox项目回调" />
+        <ConfigItem Id="34" Name="clb.host" Value="http://testclb.4sonline.net:81/" Description="CLB系统Host" />
+        <ConfigItem Id="35" Name="mwp.host" Value="http://testmwp.4sonline.net:81/" Description="mwp系统Host" />
+        <ConfigItem Id="36" Name="mdwapi.host" Value="http://testmdwapi.4sonline.net:81/" Description="mdwapi系统Host" />
+        <ConfigItem Id="37" Name="mms.host" Value="http://testmms.4sonline.net:81/" Description="mms服务地址" />
+        <ConfigItem Id="38" Name="osp.host" Value="http://testosp.4sonline.net:81/" Description="osp系统Host" />
+        <ConfigItem Id="39" Name="server.fence.url" Value="http://testcliser.4sonline.net:81/" Description="cliser服务器地址" />
+        <ConfigItem Id="41" Name="amanyagent.host" Value="http://testamanyagent.4sonline.net:81/" Description="语音坐席系统host" />
+        <ConfigItem Id="43" Name="store.host" Value="http://teststore.4sonline.net:81/" Description="进销存项目" />
+        <ConfigItem Id="44" Name="server.tracker.url" Value="http://testcliser.4sonline.net:81" Description="cliser服务器地址" />
+        <ConfigItem Id="45" Name="fence.host" Value="http://218.17.152.243:9005/" Description="围栏服务器转发地址" />
+        <ConfigItem Id="46" Name="fence.notify.host" Value="http://218.17.152.243:9005/" Description="围栏服务器通知修改地址" />
+        <ConfigItem Id="47" Name="callCenter.botian.host" Value="http://59.37.56.250:8000/" Description="博天呼叫中心地址" />
+        <ConfigItem Id="49" Name="bossFileserver.host" Value="http://192.168.11.31:81/" Description="图片路径" />
+        <ConfigItem Id="50" Name="pay.host" Value="http://testpaycenter.4sonline.net:81" Description="支付中心的IP" />
+        <ConfigItem Id="51" Name="socser.host" Value="http://testsocser.4sonline.net:81" Description="车联宝socser服务" />
+        <ConfigItem Id="52" Name="csp.host" Value="http://testcsp.4sonline.net:81/" Description="CSP服务器地址" />
+        <ConfigItem Id="53" Name="callcenter.third.host" Value="http://211.154.128.171:2222/365car/api/add-to-call-list.jsp" Description="第3方呼叫中心" />
+        <ConfigItem Id="54" Name="gps.host" Value="http://testgps.4sonline.net:81/" Description="gps服务器地址 " />
+        <ConfigItem Id="55" Name="OAM.host" Value="http://192.168.7.74:80/" Description="OAM服务器地址" />
+        <ConfigItem Id="56" Name="bss.host" Value="http://testbss.4sonline.net:81/" Description="bss服务器地址" />
+        <ConfigItem Id="57" Name="ecall.username" Value="msdtsp" Description="用户名"></ConfigItem>
+        <ConfigItem Id="58" Name="ecall.password" Value="tsp123" Description="密码"></ConfigItem>
+        <ConfigItem Id="59" Name="ecall.partnerCode" Value="E00022" Description="合作伙伴编码"></ConfigItem>
+        <ConfigItem Id="60" Name="ecall.host" Value="http://36.110.3.233:8081" Description="远盟地址"></ConfigItem>
+        <ConfigItem Id="61" Name="ecall.vip.host" Value="http://webservice01.healthlink.cn:8889/" Description="远盟入库地址"></ConfigItem>
+        <ConfigItem Id="62" Name="opm.host" Value="http://192.168.11.29:81/" Description="opm服务器地址"></ConfigItem>
+        <ConfigItem Id="65" Name="sms.host" Value="http://192.168.11.30:81/" Description="sms短信平台项目"></ConfigItem>
+        <ConfigItem Id="66" Name="scheduletask.host" Value="http://192.168.11.24:81/" Description="scheduletask服务器地址"></ConfigItem>
+        <ConfigItem Id="66" Name="socket.fence.host" Value="http://218.17.152.243:8087/" Description="C++围栏服务器socket接口"></ConfigItem>
+        <ConfigItem Id="67" Name="tsi.ios.service.test" Value="1" Description="ios推送环境配置(1:测试,0:商用),可以作为商用和测试环境的判断"></ConfigItem>
+        <ConfigItem Id="68" Name="smartbox.app.baidu.id" Value="7959218" Description="smartbox在百度云里面的id"></ConfigItem>
+        <ConfigItem Id="69" Name="smartbox.Android.app.baidu.apiKey" Value="QfGY7xkCebSgNtjWMjDtmuOc" Description="smartbox Android在百度云里面的apiKey"></ConfigItem>
+        <ConfigItem Id="70" Name="smartbox.Android.app.baidu.secretKey" Value="jPM3fn696j7HqpwX1EbMGZqZhXCMC4QX" Description="smartbox Android在百度云里面的secretKey"></ConfigItem>
+        <ConfigItem Id="71" Name="1.5T.ios.app.baidu.apiKey" Value="7naFentSq56GWx5nEtrbhFky" Description="1.5T手机ios版app在百度云里面的apiKey"></ConfigItem>
+        <ConfigItem Id="72" Name="1.5T.ios.app.baidu.secretKey" Value="Z2mIO3iCpi3gzitVawxk6P9Y8POrbnh6" Description="1.5T手机ios版app在百度云里面的secretKey"></ConfigItem>
+        <ConfigItem Id="73" Name="1.5T.Android.app.baidu.apiKey" Value="Fztq32lYGMjA07NG4fg2xqO9" Description="1.5T手机Android版app在百度云里面的apiKey"></ConfigItem>
+        <ConfigItem Id="74" Name="1.5T.Android.app.baidu.secretKey" Value="sM6oh7B5svSilcdonGUve5AeNKRaRaZK" Description="1.5T手机Android版app在百度云里面的secretKey"></ConfigItem>
+        <ConfigItem Id="76" Name="smartbox.ios.app.baidu.apiKey" Value="UbyBk8UL3Ok0GxvT5vVsjukE" Description="smartbox ios在百度云里面的apiKey"></ConfigItem>
+        <ConfigItem Id="77" Name="smartbox.ios.app.baidu.secretKey" Value="OGBC48Uo6iEZQl01KIZIjdLGQzEbwCO2" Description="smartbox ios在百度云里面的secretKey"></ConfigItem>
+        <ConfigItem Id="78" Name="ecall.failure.sm.mobile" Value="" Description="管理员预警号码"></ConfigItem>
+        <ConfigItem Id="79" Name="1.5T.ios.qiye.app.baidu.apiKey" Value="l4udtHovUjkacKGO4xKbNg1P" Description="1.5T手机ios企业版app在百度云里面的apiKey"></ConfigItem>
+        <ConfigItem Id="80" Name="1.5T.ios.qiye.app.baidu.secretKey" Value="4fzxF8qqeVaYYgo3hYoDvH9mFxhmcsHZ" Description="1.5T手机ios企业版app在百度云里面的secretKey"></ConfigItem>
+        <ConfigItem Id="81" Name="smbop.host" Value="http://192.168.11.30:81/" Description="smbop服务器地址"></ConfigItem>
+        <ConfigItem Id="82" Name="webChatShop.host" Value="http://113.106.165.147:3002/" Description="WebChatShop服务器地址"></ConfigItem>
+        <ConfigItem Id="83" Name="canbox.host" Value="http://192.168.11.28:81/" Description="CanBoxApp接口服务器地址http://192.168.11.28:81/"></ConfigItem>
+        <ConfigItem Id="84" Name="xftm.host" Value="http://happyleasing.cn/TMZL" Description="先锋太盟接口地址"></ConfigItem>
+        <ConfigItem Id="85" Name="xftm.token" Value="9f7114be4c351b0610e14310f3226d88" Description="先锋太盟接口地址"></ConfigItem>
+        <ConfigItem Id="86" Name="mwspBaseService.url" Value="http://testmwswx.365car.com.cn/" Description="微商城base项目地址"></ConfigItem>
+        <ConfigItem Id="87" Name="smartbox.ios.qiye.app.baidu.apiKey" Value="7blZGq6LGj3oi2KUiQDcOhMZ" Description="smartbox ios在百度云里面的apiKey"></ConfigItem>
+        <ConfigItem Id="88" Name="smartbox.ios.qiye.app.baidu.secretKey" Value="cACbXe1LRgEbGCkI4ceUP3Kypc7rFs7b" Description="smartbox ios在百度云里面的secretKey"></ConfigItem>
+        <ConfigItem Id="89" Name="bizservice.ESmsCount" Value="5" Description="E信通发送短信条数"></ConfigItem>
+        <ConfigItem Id="90" Name="mwspApp.url" Value="http://testmwswx.365car.com.cn/" Description="mwspApp路径"></ConfigItem>
+        <ConfigItem Id="91" Name="mwspWx.url" Value="http://testmwswx.365car.com.cn/" Description="mwspWx路径"></ConfigItem>
+        <ConfigItem Id="92" Name="CommonTokenKey" Value="cd877e4274a4306e20f910c1439ee9f6e86c7d412aaaf364d987a0de1067c4093dd985b5a9a5a258ffb28b31f658fbd3" Description="各系统通信密钥 "/>
+        <ConfigItem Id="93" Name="msg.url" Value="http://192.168.6.16:3009/api/cmpp/sendMSG" Description="调用nodejs发送短信"></ConfigItem>
+        <ConfigItem Id="94" Name="ym.dljy.url" Value="http://dd.movingwheel.net" Description="远盟道路救援地址"></ConfigItem>
+        <ConfigItem Id="95" Name="push.cli.address" Value="192.168.1.1" Description="808推送服务器地址"></ConfigItem>
+        <ConfigItem Id="96" Name="push.cli.port" Value="7911" Description="808推送服务器地址的端口"></ConfigItem>
+        <ConfigItem Id="97" Name="smartbox.app.JPush.apiKey" Value="b8793647d531e8b73e555d42" Description="smartbox 在极光里面的apiKey"></ConfigItem>
+        <ConfigItem Id="98" Name="smartbox.app.JPush.secretKey" Value="7e2102151458b2b7385da151" Description="smartbox 在极光里面的secretKey"></ConfigItem>
+        <ConfigItem Id="99" Name="device.app.JPush.apiKey" Value="d00f5506387a6f0058012d9e" Description="安卓终端 在极光里面的apiKey"></ConfigItem>
+        <ConfigItem Id="100" Name="device.app.JPush.secretKey" Value="42d3cc28f5f64ae0b4ba9afc" Description="安卓终端 在极光里面的secretKey"></ConfigItem>
+        <ConfigItem Id="101" Name="msd.track.url" Value="http://192.168.11.48:81/track/" Description="track项目的测试环境路径"></ConfigItem>
+        <ConfigItem Id="102" Name="wds.url" Value="http://wds.365car.com.cn/mwsBase/" Description="微商城项目提供获取设备购买套餐记录的接口域名"></ConfigItem>
+        <ConfigItem Id="103" Name="biz.port" Value="81" Description="测试环境端口"></ConfigItem>
+        <ConfigItem Id="104" Name="gps.track.data.time" Value="2016-07-01 00:00:00" Description="gps项目设定时间阈值:大于该日期数据来源于mongodb,小于该日期数据来源于oracle"></ConfigItem>
+ <ConfigItem Id="105" Name="mwsBase.url" Value="http://192.168.6.56:8080/" Description=""></ConfigItem>
+    </Content>
+</Config>

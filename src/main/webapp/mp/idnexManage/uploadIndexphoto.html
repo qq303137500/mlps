@@ -1,0 +1,46 @@
+  	<div class="location">当前位置：<a href="javascript:;">首页管理</a> > <a href="javascript:;">上传图片</a></div>
+  	<div class="content">
+  		<div class="addCar">
+   		<ul>
+   		     <li>
+   				<span class="sp">标题：</span>
+        		<input id="cpName" type="text" maxlength="100" class="input-txt w300"/>
+        		<p style="font-size:13px;color:darkgray">（不超过100字符）</p>
+   			</li>
+			<li style="padding-top:20px;">
+   				<span class="sp vat">图片：</span>
+        		 <form id="upload_photo_form"  enctype="multipart/form-data" method="post" style="display:inline;" >
+						<!-- width:3425;height:2362; -->
+						<img style="width:150px;height:105px;border:1px solid #b2b2b2;vertical-align:bottom;margin-right:5px;" 
+			           	src="/fpcwx/images/default_img.png" style="margin-top:5px;"  
+			           	onerror="this.src='/fpcwx/images/wall_active_upload.png'" id="imgInfo" />
+			           	<div class="up_wrap" style="*top:88px;padding-left:5px;">
+				           <a href="javascript:void(0)" class="btnCancel" id="chooseImg">
+				           		<span class="btn-upload">选择图片 </span>
+				           </a>
+				           <span class="soundFileed"><input type="file"  id="indexPhoto" class="pa hideFilet" name="f"/></span>
+			           		<p style="font-size:13px;color:darkgray;position:absolute;top:-30px;width: 500px;left:0px;">（支持jpg，jpeg，png图片格式，大小不超过300KB，最佳尺寸为1080*605）</p>
+			           </div>
+			           <input type="hidden" id="suoPic_value" >
+               </form>
+        		
+   			</li>
+   			 <li>
+   				<span class="sp">图片跳转链接：</span>
+        		<input id="httpUrl" type="text" maxlength="200" class="input-txt w300"/>
+        		<p style="font-size:13px;color:darkgray">（不超过100字符）</p>
+   			</li>
+   			<li>
+   				<p class="btn ml120"><a href="javascript:;" class="btn-submit" id="saveBT">发布</a></p>
+   				<p><a href="javascript:void(0)" class="btn-cancel" id="cancelBT">返回</a></p>
+   			</li>
+   		</ul>
+  		</div>
+  	</div>
+<script src="../js/mp/contentManage/appManage/manage.js" type="text/javascript"></script>
+<script src="../js/mp/indexManage/uploadIndexPhoto.js" type="text/javascript"></script>
+<script>
+$(function(){
+	upindexPhoto.initPage();
+});
+</script>

@@ -1,0 +1,35 @@
+<div class="location">当前位置：<a href="#">公司内刊</a> > <a href="#">添加资料</a></div>
+    	<div class="content">
+    		<div class="addCar">
+	    		<ul>
+	    			<li>
+	    				<span class="sp">资料名称：</span>
+          		<input id="inTitle" type="text" class="input-txt w300"/>
+          		<p style="font-size:13px;color:darkgray">（不超过100字符）</p>
+	    			</li>
+	    			<li>
+	    				<span class="sp vat">公司内刊：</span>
+	    				<form id="upload_photo_form"  enctype="multipart/form-data" method="post" style="display:inline;padding: 0;" >
+		    				<input id="fileName" type="text" class="input-txt w300" readonly="readonly"/>
+		    				<div style="position: relative;display: inline-block;top: 2px;margin-top: 5px;">
+			    				<p id="pf1"><a href="#" class="btn-upload" style="padding: 8px 25px;">上传公司内刊</a></p>
+			    				<span class="uploadFile" ><input type="file"  id="bizLicenseFile" class="pa hideFilet" name="f"/></span>
+			    				<a href="#" id="fileInfo" style="display: none" target="_bank"></a>
+		    				</div>	
+	    				</form>
+	    				<p id="pf2" class="font-red" style="display: block;padding-left: 150px;font-size: 13px;">*仅支持PDF格式上传，文件最大15M</p>
+	    			</li>
+	    			<li>
+	    				<p class="btn ml120"><a href="#" class="btn-submit" id="saveBT">发布</a></p>
+	    				<p><a href="#" class="btn-cancel" id="cancelBT">返回</a></p>
+	    			</li>
+	    		</ul>
+    		</div>
+    	</div>
+<script src="../js/mp/contentManage/appManage/manage.js" type="text/javascript"></script>
+<script src="../js/mp/contentManage/appManage/addMagazine.js" type="text/javascript"></script>
+<script>
+$(function(){
+	addMagazine.initPage();
+});
+</script>

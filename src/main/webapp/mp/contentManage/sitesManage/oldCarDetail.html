@@ -1,0 +1,183 @@
+    	<div class="location">当前位置：<a href="#">二手车管理</a> > <a href="#">二手车信息发布</a></div>
+    	<div class="content">
+    		<div class="addCar">
+	    		<ul>
+	    			<li>
+	    				<span class="sp">品牌：</span>
+		          		 <label id="carEdit_select"></label>
+		          		<span class="sp">车系：</span>
+		          		<label id="cartypeEdit_select"></label>
+	    			</li>
+	    			<li class="carColor">
+	    				<span class="sp vat" style="padding-top:8px;">车身颜色：</span>
+	    					<ul id="color_ul">
+									<li class="bg" value="黑色">
+										<div class="cColor" style="background:#000;"></div>
+										<span>黑色</span>
+									</li>
+									<li value="银灰色">
+										<div class="cColor" style="background:#D6D6D6;"></div>
+										<span>银灰色</span>
+									</li>
+									<li value="白色">
+										<div class="cColor" style="background:#fff;"></div>
+										<span>白色</span>
+									</li>
+									<li value="红色">
+										<div class="cColor" style="background:red;"></div>
+										<span>红色</span>
+									</li>
+									<li value="蓝色">
+										<div class="cColor" style="background:blue;"></div>
+										<span>蓝色</span>
+									</li>
+									<li value="深灰色">
+										<div class="cColor" style="background:#8F8F8F;"></div>
+										<span>深灰色</span>
+									</li>
+									<li value="香槟色">
+										<div class="cColor" style="background:#C98C50;"></div>
+										<span>香槟色</span>
+									</li>
+									<li value="绿色">
+										<div class="cColor" style="background:green;"></div>
+										<span>绿色</span>
+									</li>
+									<li value="黄色">
+										<div class="cColor" style="background:yellow;"></div>
+										<span>黄色</span>
+									</li>
+									<li value="橙色">
+										<div class="cColor" style="background:#F38010;"></div>
+										<span>橙色</span>
+									</li>
+									<li value="紫色">
+										<div class="cColor" style="background:#7139A1;"></div>
+										<span>紫色</span>
+									</li>
+									<li value="咖啡色">
+										<div class="cColor" style="background:#552701;"></div>
+										<span>咖啡色</span>
+									</li>
+									<li value="多彩色">
+										<div class="cColor" style="background:url(/fpcwx/images/duocai.jpg);"></div>
+										<span>多彩色</span>
+									</li>
+									<li value="其他">
+										<div class="cColor" style="background:url(/fpcwx/images/qita.jpg);"></div>
+										<span>其他</span>
+									</li>
+								</ul>				
+	    			</li>
+	    			<li>
+	    			 <span class="sp">车辆级别：</span>
+          				<label id="select_lev"></label>
+	    			</li>
+	    			<li>
+	    				<span class="sp">发动机：</span>
+	    				 <label id="fdj_input"></label>
+	    			</li>
+	    			<li>
+	    				<span class="sp">变速箱：</span>
+	    				 <label id="bsx_input"></label>
+	    			</li>
+	    			<li>
+	    				<span class="sp">车牌所在地：</span>
+	    				<label id="provinceEdit_select"></label>
+	    				
+	    				
+	    				<label id="cityEdit_select"></label>
+	    			</li>
+	    			<li>
+	    				<span class="sp">经销商：</span>
+	    				 <label id="jxs_input"></label>
+	    			</li>
+	    			<li>
+	    				<span class="sp">行驶里程：</span>
+	    				<label id="mileage_input"></label> 万公里
+	    			</li>
+	    			<li>
+	    				<span class="sp">首次上牌时间：</span>
+						 <label id="buyDate_input"></label> 
+	    			</li>
+	    			<li>
+	    				<span class="sp">预售价格：</span>
+	    				<label id="price_input"></label> 万元
+	    			</li>
+	    			<li>
+	    				<span class="sp">新车价格：</span>
+	    				<label id="newPrice_input"></label> 万元
+	    			</li>
+	    			<li>
+	    				<span class="sp">相关认证：</span>
+	    				<label id="approve_input"></label> 
+	    			</li>
+	    			<li style="padding-top:5px;">
+	    				<span class="sp">相关质保：</span>
+	    				<label id="assure_input"></label> 
+	    			</li>
+	    			<li>
+	    				<span class="sp">车辆性质：</span>
+	    				<label id="select_clxz"></label> 
+	    			</li>
+	    			<li>
+	    				<span class="sp">车辆状况：</span>
+	    				<label id="carStatus"></label> 
+	    			</li>
+	    			<li>
+	    				<span class="sp">是否有保养记录：</span>
+	    				<label id="isbyjl"></label> 
+	    			</li>
+	    			<li>
+	    				<span class="sp">保养到期：</span>
+	    				<label id="repairDate"></label> 
+	    			</li>
+	    			<li>
+	    				<span class="sp">年检到期：</span>
+	    				<label id="annDate"></label> 
+	    			</li>
+	    			<li>
+	    				<span class="sp">流通次数：</span>
+	    				<label id="num_input"></label> 
+	    			</li>
+	    			<li  >
+	    				<span class="sp vat">融资套餐：</span>
+	    				<table class="tab" style="width: 590px;">
+	    					<thead >
+	    						<tr>
+	    							<td>套餐名称</td>
+	    							<td>首付比例（%）</td>
+	    							<td>融资金额（元）</td>
+	    							<td>融资期限（月）</td>
+	    							<td>月供（元）</td>
+	    						</tr>
+	    					</thead>
+	    					<tbody id="rz_tbody">
+	    						<tr>
+	    							<td> </td>
+	    							<td> </td>
+	    							<td> </td>
+	    							<td> </td>
+	    							<td> </td>
+	    						</tr>
+	    					</tbody>
+	    				</table>
+	    			</li>
+	    			<li>
+	    				<span class="sp">车辆实拍：</span>
+	    				<div class="pic" id="pic_div">
+	    					 
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<span class="sp vat">车主自述：</span>
+	    				<label id="areaczzs"></label> 
+	    			</li>
+	    			<li>
+	    				<p class="btn ml120" id="add_p"></p>
+	    				<p><a href="javascript:;"  id="back_a" class="btn-cancel">返回</a></p>
+	    			</li>
+	    		</ul>
+    		</div>
+    	</div>
+<script src="/fpcwx/js/mp/contentManage/sitesManage/oldCarDetail.js" type="text/javascript"></script>    	

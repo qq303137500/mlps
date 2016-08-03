@@ -1,0 +1,33 @@
+  	<div class="location">当前位置：<a href="#">客服管理</a> > <a href="#">添加客服</a></div>
+  	<div class="content">
+  		<div class="addCar">
+   		<ul>
+   			<li>
+   				<span class="sp">工号：</span>
+        		<input id="kf_account" type="text" class="input-txt w300" placeholder="不超过10个英文字符"/>
+        		<p style="font-size:13px;color:darkgray;padding-left:110px">工号(账号)不能重复,一旦输入不能修改,由字母数字组成</p>
+   			</li>
+   			<li>
+   				<span class="sp">昵称：</span>
+        		<input id="kf_nick" type="text" class="input-txt w300" placeholder="最长6个汉字或12个英文字符"/>
+        		<p style="font-size:13px;color:darkgray"></p>
+   			</li>
+			<li>
+   				<span class="sp">密码：</span>
+        		<input id="passWord" type="text" class="input-txt w300" placeholder="请输入6-16位的密码"/>
+        		<p style="font-size:13px;color:darkgray">长度在6-16位</p>
+   			</li>
+   			<li>
+   				<p class="btn ml120"><a href="#" class="btn-submit" id="saveBT">发布</a></p>
+   				<p><a href="javascript:void(0)" class="btn-cancel" id="cancelBT">返回</a></p>
+   			</li>
+   		</ul>
+  		</div>
+  	</div>
+<script src="../js/mp/wxKf/manage.js" type="text/javascript"></script>
+<script src="../js/mp/wxKf/addKf.js" type="text/javascript"></script>
+<script>
+$(function(){
+	addKf.initPage();
+});
+</script>

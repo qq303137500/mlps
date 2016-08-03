@@ -1,0 +1,40 @@
+<div class="location">当前位置：<a href="#">内容管理</a> > <a href="#">添加FAQ</a></div>
+   	<div class="content">
+   		<div class="addCar">
+    		<ul>
+    			<li>
+    				<span class="sp">标题：</span>
+         			<input id="inTitle" type="text" class="input-txt w300"/>
+         			<p style="font-size:13px;color:darkgray">（不超过100字符）</p><br/><br/>
+    			</li>
+    			<li>
+    				<span class="sp">内容：</span>
+         			<textarea cols="60" rows="5" id="content"></textarea>
+         			<p style="font-size:13px;color:darkgray">（不超过1000字符）</p><br/><br/>
+    			</li>
+    			<li>
+    				<span class="sp">类型：</span>
+         			<select id="faqType" style="width:100px">
+	    				<option value="">全部</option>
+	    				<option value="0">公共问题</option>
+	    				<option value="1">贷前销售</option>
+	    				<option value="2">贷前风控</option>
+	    				<option value="3">贷中费用</option>
+	    				<option value="4">贷后业务</option>
+	    				<option value="5">贷后还款</option>
+	    			</select>
+    			</li>
+    			<li>
+    				<p class="btn ml120"><a href="javascript:void(0)" class="btn-submit" id="saveBT">确定</a></p>
+    				<p><a href="javascript:void(0)" class="btn-cancel" id="cancelBT">返回</a></p>
+    			</li>
+    		</ul>
+   		</div>
+   	</div>
+<script src="../js/mp/contentManage/appManage/manage.js" type="text/javascript"></script>
+<script src="../js/mp/contentManage/appManage/addFaq.js" type="text/javascript"></script>
+<script>
+$(function(){
+	addFaq.initPage();
+});
+</script>

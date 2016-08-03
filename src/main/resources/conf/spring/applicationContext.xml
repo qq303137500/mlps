@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+           http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd">
+
+	<context:component-scan base-package="com.mlps" /><!-- 
+		开启组件自动扫描 -->
+	<context:annotation-config /><!-- 开启注解处理器 -->
+	<aop:aspectj-autoproxy proxy-target-class="true" /><!-- 
+		开启基于@AspectJ切面的注解处理器 -->
+	<!-- huangzj -->
+	<tx:annotation-driven transaction-manager="transactionManagerCanbox" />
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="order" value="1" />
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="locations">
+			<list>
+				<value>classpath:jdbc.properties</value>
+				<value>classpath:configEmail.properties</value>
+				<!-- 
+				<value>classpath:config.properties</value>
+				 -->
+			</list>
+		</property>
+	</bean>
+	<bean id="canBoxDataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="${jdbc.url.dstreet}" />
+		<property name="username" value="${jdbc.user.dstreet}" />
+		<property name="password" value="${jdbc.password.dstreet}" />
+		<property name="initialSize" value="10" />
+		<property name="maxActive" value="50" />
+		<property name="maxIdle" value="20" />
+		<property name="minIdle" value="10" />
+		<property name="defaultAutoCommit" value="true" />
+		<property name="removeAbandoned" value="true" />
+		<property name="removeAbandonedTimeout" value="30" />
+		<property name="logAbandoned" value="true" />
+	</bean>
+
+	<bean id="transactionManagerCanbox"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="canBoxDataSource"></property>
+	</bean>
+
+	<bean id="freeMarkerUtils" name="freeMarkerUtils" class="com.msd.platform.util.FreeMarkerUtils" ></bean>
+	
+	<!-- 设置配置文件
+	<bean id="configUtils" name="configUtils" class="com.msd.platform.util.ConfigUtils" init-method="init" />
+	 -->
+	<bean id="replyNewsUtils" name="replyNewsUtils" class="com.mlps.business.utils.ReplyNewsUtils" init-method="init" />
+	<bean id="configInterfaceUtils" name="configInterfaceUtils" class="com.mlps.business.utils.ConfigInterfaceUtils" init-method="init" />
+</beans>

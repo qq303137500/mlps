@@ -1,0 +1,15 @@
+contentManage  内容管理
+coreManage     核心管理
+homeManage     主页管理
+workPlan       工作计划
+
+
+动态页面同意命名方式
+列表     *List
+详情     *Det
+编辑     *Edit
+新增     *Add
+
+
+静态页面和JS要一一对应
+一组JS里面的请求方法封装起来

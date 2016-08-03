@@ -1,0 +1,28 @@
+  	<div class="location">当前位置：<a href="#">关注回复设置</a> > <a href="#">编辑关注回复</a></div>
+  	<div class="content">
+  		<div class="addCar">
+   		<ul>
+   			<li>
+   				<span class="sp">文本返回类型：</span>
+        		<input id="cpName" type="radio" checked="checked" />&nbsp;&nbsp;文本
+        		
+   			</li>
+			
+   			<li>
+   				<span class="sp vat">正文：</span>
+   				<textarea cols="85" rows="20" id="replyTextId"></textarea>
+   			</li>
+   			<li>
+   				<p class="btn ml120"><a href="#" class="btn-submit" id="saveBT">发布</a></p>
+   				<p><a href="javascript:void(0)" class="btn-cancel" id="cancelBT">取消</a></p>
+   			</li>
+   		</ul>
+  		</div>
+  	</div>
+<script src="../js/mp/wxReplyManage/subscribeManage/manage.js" type="text/javascript"></script>
+<script src="../js/mp/wxReplyManage/subscribeManage/addSubscribe.js" type="text/javascript"></script>
+<script>
+$(function(){
+	addSubscribe.initPage();
+});
+</script>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="${email.host}" />
+		<property name="username" value="${email.username}" />
+		<property name="password" value="${email.password}" />
+		<property name="javaMailProperties">
+			<props>
+			<prop key="mail.smtp.auth">true</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="emailServiceImpl" class="com.mlps.common.controller.service.impl.EmailServiceImpl" >
+		<property name="defaultFrom" value="${email.defaultFrom}" />
+		<property name="defaultFromName" value="${email.defaultFromName}" />
+		<property name="userName" value="${email.webservice.userName}" />
+		<property name="password" value="${email.webservice.password}" />
+		<property name="mailSender" ref="mailSender" />
+	<!--	<property name="emailWebService" ref="emailWebServiceImpl" />-->
+	</bean>
+	<!--
+	<bean id="emailWebServiceImpl" class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean">
+		<property name="serviceInterface" value="com.msd.bizser.web.service.email.EmailWebService"/>
+		<property name="wsdlDocumentUrl" value="http://mail02.mailbus.net/ws/MailSenderServicePort?wsdl"/>
+		<property name="namespaceUri" value="http://mail.com/"/>
+		<property name="serviceName" value="MailSenderService"/>
+		<property name="portName" value="MailSenderServicePort"/>
+	</bean>
+	-->
+</beans>

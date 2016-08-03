@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>xhEditor 文件上传</title>
+<link rel="stylesheet" href="/clb/script/lib/xheditor-1.2.1/common.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/clb/script/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/clb/script/jquery.form.js"></script>
+<script type="text/javascript" src="/clb/script/lib/xheditor-1.2.1/xheditor-1.2.1.js"></script>
+<script type="text/javascript" src="/clb/script/lib/xheditor-1.2.1/xheditor_lang/zh-cn.js"></script>	
+<script type="text/javascript">
+
+
+	function pageInit() {
+		var xheditor = $('#elm1').xheditor( {
+			//tools : 'full',
+			tools : 'Cut,Copy,Paste,Pastetext,|,Blocktag,Fontface,FontSize,Bold,Italic,Underline,Strikethrough,FontColor,BackColor,SelectAll,Removeformat,|,Align,List,Outdent,Indent,|,Link,Img,Flash,Media,Hr,Table,|,Source,Fullscreen,Preview',
+			skin : 'o2007blue',
+			width : '690',
+			height : '250',
+			upMultiple : true,
+			upImgUrl : '/clb/common_xhEditorUpload.action?fid=c_clbImage',
+			upImgExt : 'jpg,jpeg,gif,png',
+			upMediaUrl : '/clb/common_xhEditorUpload.action?fid=c_clbMedia',
+			upMediaExt : 'wmv,avi,wma,mp3,mid',
+			upFlashUrl : '/clb/common_xhEditorUpload.action?fid=c_clbFlash',
+			upFlashExt : 'swf',
+			html5Upload : false,
+			onUpload : function(data) {
+				console.log(data);
+			}
+		});
+
+		$('#submit').click(function() {
+			console.log(xheditor.getSource());
+		});
+
+	}
+	function submitForm() {
+		$('#frmDemo').submit();
+	}
+	$(pageInit);
+
+	$(function(){ 
+	    $("#phone").change(function(){ 
+	        $("#message").text("正在加载.."); 
+	        $("#theone").attr("src",$(this).val()); 
+	    }); 
+	     
+	    $("#theone").load(function(){ 
+	        $("#message").text(""); 
+	    }); 
+	}); 
+</script>
+</head>
+<body>
+<form id="frmDemo" method="post" action="show.php">
+	<textarea id="elm1" name="elm1" rows="30" cols="80" style="width: 90%">
+	</textarea><br /><br />
+	<br/><br />
+	<input type="button" name="save" value="Submit" id="submit"/>
+	<input type="reset" name="reset" value="Reset" />
+</form>
+</body>
+</html>
