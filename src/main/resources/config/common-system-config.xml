@@ -100,6 +100,6 @@
         <ConfigItem Id="102" Name="wds.url" Value="http://wds.365car.com.cn/mwsBase/" Description="微商城项目提供获取设备购买套餐记录的接口域名"></ConfigItem>
         <ConfigItem Id="103" Name="biz.port" Value="81" Description="测试环境端口"></ConfigItem>
         <ConfigItem Id="104" Name="gps.track.data.time" Value="2016-07-01 00:00:00" Description="gps项目设定时间阈值:大于该日期数据来源于mongodb,小于该日期数据来源于oracle"></ConfigItem>
- <ConfigItem Id="105" Name="mwsBase.url" Value="http://192.168.6.56:8080/" Description=""></ConfigItem>
+ 		<ConfigItem Id="105" Name="mwsBase.url" Value="http://192.168.6.56:8080/" Description=""></ConfigItem>
     </Content>
 </Config>

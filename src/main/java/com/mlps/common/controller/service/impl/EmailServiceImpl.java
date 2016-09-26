@@ -5,6 +5,8 @@ import javax.mail.internet.MimeMessage;
 import org.apache.log4j.Logger;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import com.mlps.common.controller.service.EmailService;
@@ -39,8 +41,7 @@ public class EmailServiceImpl implements EmailService
     /**
      * 邮件发送使用webservice发送
      */
-    public static String EMAIL_SEND_WS_API = AppConfig.getItemValue(
-            ConfigConstants.MODULE_EMAIL, ConfigConstants.ITEM_EMAILSENDWSAPI);
+    public static String EMAIL_SEND_WS_API = AppConfig.getItemValue(ConfigConstants.MODULE_EMAIL, ConfigConstants.ITEM_EMAILSENDWSAPI);
 
     public Integer[] send(String[] to, String subject, String content)
             throws Exception

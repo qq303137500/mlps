@@ -4,7 +4,7 @@
   <!-- System配置 -->  
   <Content Name="System" Description=""> 
     <ConfigItem Id="0" Name="fileMonitorTaskInterval" Value="10000" Description="配置文件监听间隔时间（毫秒）"/>  
-    <ConfigItem Id="1" Name="tomcat.home" Value="D:/Program Files/apache-tomcat-7.0.55/apache-tomcat-7.0.55" Description="本地开发环境tomcat路径"/>  
+    <ConfigItem Id="1" Name="tomcat.home" Value="D:/Program Files/apache-tomcat-7.0.52" Description="本地开发环境tomcat路径"/>  
     <ConfigItem Id="2" Name="diamondServer.flag" Value="false" Description="是否加载配置中心DiamondServer"/>  
   </Content>  
   

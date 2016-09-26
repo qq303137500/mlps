@@ -14,15 +14,17 @@
 		</property>
 	</bean>
 	
+	<!-- 
 	<bean id="emailServiceImpl" class="com.mlps.common.controller.service.impl.EmailServiceImpl" >
 		<property name="defaultFrom" value="${email.defaultFrom}" />
 		<property name="defaultFromName" value="${email.defaultFromName}" />
 		<property name="userName" value="${email.webservice.userName}" />
 		<property name="password" value="${email.webservice.password}" />
 		<property name="mailSender" ref="mailSender" />
+		 -->
 	<!--	<property name="emailWebService" ref="emailWebServiceImpl" />-->
-	</bean>
-	<!--
+		<!--</bean>
+
 	<bean id="emailWebServiceImpl" class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean">
 		<property name="serviceInterface" value="com.msd.bizser.web.service.email.EmailWebService"/>
 		<property name="wsdlDocumentUrl" value="http://mail02.mailbus.net/ws/MailSenderServicePort?wsdl"/>

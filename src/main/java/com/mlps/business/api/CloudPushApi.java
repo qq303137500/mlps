@@ -16,6 +16,7 @@ import com.mlps.pojo.UserInfo;
 import com.msd.platform.util.Logs;
 
 /**
+ * 云推送
  * @author fangpc
  *
  */

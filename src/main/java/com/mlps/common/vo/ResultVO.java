@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * 统计结果
- * @author Administrator
+ * @author fangpc
  *
  */
 public class ResultVO implements Serializable{
