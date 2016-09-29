@@ -10,6 +10,11 @@ import java.util.Date;
  */
 public class UserData implements Serializable  {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5865472461888462410L;
+
 	//数据ID
 	private Long id;
 	
@@ -27,6 +32,15 @@ public class UserData implements Serializable  {
 	
 	//系统时间
 	private Date sysTime;
+	
+	//经度
+	private String longitude;
+	
+	//维度
+	private String latitude;
+	
+	//POI位置点
+	private String position;
 
 	public Long getId() {
 		return id;
@@ -74,6 +88,30 @@ public class UserData implements Serializable  {
 
 	public void setAfterData(String afterData) {
 		this.afterData = afterData;
+	}
+
+	public String getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
+
+	public String getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
+	public String getPosition() {
+		return position;
+	}
+
+	public void setPosition(String position) {
+		this.position = position;
 	}
 	
 	

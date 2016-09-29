@@ -3,6 +3,7 @@ package com.mlps.business.service;
 import java.util.List;
 
 import com.mlps.pojo.UserData;
+import com.msd.platform.vo.Page;
 
 /**
  * 用户数据(体检?)
@@ -22,6 +23,6 @@ public interface UserDataService {
 	 * 查询用户数据
 	 * @return
 	 */
-	public List<UserData> retrieveUserDateList();
+	public List<UserData> retrieveUserDateList(String beginTime,String endTime,Page page);
 	
 }
